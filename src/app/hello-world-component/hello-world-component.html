@@ -1,0 +1,25 @@
+<h1>{{ title }}</h1>
+<p>{{ message }}</p>
+<ul>
+  <li *ngFor="let num of number">{{ num }}</li>
+</ul>
+
+<p>{{ number[0] }}</p>
+<p>{{ number[1] }}</p>
+<p>{{ number[2] }}</p>
+<p>{{ number[3] }}</p>
+<p>{{ number[4] }}</p>
+
+<p>Current time: {{ getCurrentTime() }}</p>
+
+<input type="text" #userInput (input)="handleInput(userInput.value)" />
+<p>You typed: {{ userInput.value }}</p>
+
+<button (click)="handleClick()">Click me!</button>
+<p>Click count: {{ clickCount }}</p>
+
+<ul>
+  <li *ngFor="let item of number">
+    {{ item }}
+  </li>
+</ul>
